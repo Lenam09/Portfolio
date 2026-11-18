@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - LÊ VĂN NAM</title>
+    <!-- Kết nối file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- THANH ĐIỀU HƯỚNG TỐI GIẢN -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">&lt; LÊ NAM /&gt;</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Mở menu">☰</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#projects">Dự án</a>
+                <a href="#contact">Học tập</a>
+            </nav>
+        </div>
+    </header>
+    <!-- KHUNG NỘI DUNG CHÍNH DẠNG BENTO CARD -->
+    <main class="container main-wrapper">
+        <!-- HÀNG 1: THẺ TÊN + ẢNH ĐẠI DIỆN -->
+        <section id="home" class="top-grid">
+            <!-- Thẻ giới thiệu bên trái -->
+            <div class="bento-card intro-card">
+                <span class="role-tag">SINH VIÊN CÔNG NGHỆ THÔNG TIN</span>
+                <h1>LÊ VĂN NAM</h1>
+                <p class="bio-text">
+                    Xin chào! Mình là sinh viên năm hai ngành CNTT tại TRƯỜNG ĐẠI HỌC VINH. Mình yêu thích lập trình Web và đang tự học HTML, CSS, JavaScript thuần để xây dựng các giao diện gọn gàng, thực tế.
+                </p>
+                <!-- Thông tin liên hệ nhanh -->
+                <div class="quick-contact">
+                    <button id="copy-email-btn" class="contact-pill" data-email="[lnam14500@gmail.com]">
+                        📧 [ lnam14500@gmail.com ]
+                    </button>
+                    <a href="[https://www.facebook.com/le.nam.826443/]" target="_blank" class="contact-pill">
+                        📘 FB: Lê Nam
+                    </a>
+                </div>
+                <p id="copy-message" class="copy-msg"></p>
+            </div>
+            <!-- Khung ảnh đại diện-->
+            <div class="avatar-box">
+                <img src="img/anhchandung.jpg" alt="Ảnh đại diện mẫu">
+            </div>
+        </section>
+        <!-- HÀNG 2: HỌC VẤN & KỸ NĂNG -->
+        <section id="about" class="two-col-grid">
+            <!-- Khối Học vấn & Thông tin -->
+            <div class="bento-card">
+                <h2 class="card-title">HỌC VẤN & BẢN THÂN</h2>
+                <div class="edu-item">
+                    <div class="edu-row">
+                        <strong>TRƯỜNG ĐẠI HỌC VINH</strong>
+                    </div>
+                    <p class="sub-text">Chuyên ngành: Công nghệ thông tin</p>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-row">
+                        <strong>Định hướng nghề nghiệp</strong>
+                    </div>
+                    <p class="sub-text">Nắm vững cấu trúc dữ liệu, cơ sở dữ liệu và tìm kiếm cơ hội thực tập Web Developer / Frontend.</p>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-row">
+                        <strong>Sở thích cá nhân</strong>
+                    </div>
+                    <p class="sub-text">Lập trình giải thuật, tìm hiểu công nghệ mới, tập thể dục và nghe nhạc.</p>
+                </div>
+            </div>
+            <!-- Khối Kỹ năng dạng thẻ từ khóa -->
+            <div id="skills" class="bento-card">
+                <h2 class="card-title">KỸ NĂNG LẬP TRÌNH</h2>
+                <div class="skill-group">
+                    <p class="skill-group-title">Lập trình Web</p>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript cơ bản</span>
+                        <span>WordPress</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-title">Ngôn ngữ nền tảng</p>
+                    <div class="skill-tags">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>JavaScript</span>
+                        <span>SQL cơ bản</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <p class="skill-group-title">Công cụ & Quản lý mã nguồn</p>
+                    <div class="skill-tags">
+                        <span>VS Code</span>
+                        <span>Dev-C++</span>
+                        <span>Git & GitHub</span>
+                        <span>Figma cơ bản</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HÀNG 3: DỰ ÁN & BÀI TẬP LỚN -->
+        <section id="projects" class="bento-card full-card">
+            <h2 class="card-title">DỰ ÁN & BÀI TẬP LỚN</h2>
+            <div class="projects-two-col">
+                <!-- Dự án 1 -->
+                <div class="project-item">
+                    <img src="img/Ảnhquanly.jpg" alt="Ảnh minh họa Quản Lý Thư Viện">
+                    <div class="project-header">
+                        <h3>Quản lý thư viện</h3>
+                        <span class="tech-label">C++</span>
+                    </div>
+                    <p>Đồ án môn Lập trình Web. Xây dựng các chức năng menu của ứng dụng quản lý thư viện.</p>
+                </div>
+                <!-- Dự án 2 -->
+                <div class="project-item">
+                    <img src="img/anhbanhang.jpg" alt="Ảnh minh họa web quản lý">
+                    <div class="project-header">
+                        <h3>Website Bán Quần Áo Đơn Giản</h3>
+                        <span class="tech-label">WordPress • MySQL</span>
+                    </div>
+                    <p>Thực hành cấu hình WordPress trên localhost, tạo form đăng ký thuê phòng và tính chi phí điện nước hàng tháng.</p>
+                </div>
+            </div>
+            <!-- Dự án 3 nằm ngang bên dưới -->
+            <div class="project-item-horizontal">
+                <div>
+                    <div class="project-header">
+                        <h3>Bài Tập C/C++</h3>
+                        <span class="tech-label">C • C++ • Thuật toán</span>
+                    </div>
+                    <p>Lưu trữ các bài thực hành thuật toán sắp xếp,Quản lý thư viện.</p>
+                </div>
+            </div>
+        </section>
+        <!-- HÀNG 4: MÔN HỌC & KIẾN THỨC TỰ NGHIÊN CỨU -->
+        <section id="contact" class="two-col-grid">
+            <div class="bento-card">
+                <h2 class="card-title">MÔN HỌC TIÊU BIỂU</h2>
+                <ul class="clean-list">
+                    <li>Nhập môn lập trình</li>
+                    <li>Cấu trúc dữ liệu và giải thuật</li>
+                    <li>Cơ sở dữ liệu </li>
+                    <li>Lập trình Web cơ bản</li>
+                </ul>
+            </div>
+            <div class="bento-card">
+                <h2 class="card-title">ĐANG TỰ HỎI</h2>
+                <ul class="clean-list">
+                    <li>Tối ưu giao diện</li>
+                    <li>Học cấu trúc dữ liệu</li>
+                    <li>Các kỹ năng cần thiết </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>LÊ VĂN NAM </p>
+    </footer>
+    <!-- Kết nối file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
